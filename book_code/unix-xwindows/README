@@ -1,0 +1,62 @@
+README file for the unix-xwindows subdirectory
+Last modified on Thu Oct 20 00:01:05 1994 by eroberts
+________________________________________________________________________
+
+The unix-xwindows directory contains an implementation of the cslib
+library designed for use with XWindows (version X11) on Unix systems.
+The development and testing of the package has been performed using the
+gcc compiler, which is available without charge from the GNU project at
+MIT.  The procedure described below may work with other compilers as
+well, but the results are far less certain.
+
+TO INSTALL THE UNIX/XWINDOWS VERSION OF THE LIBRARIES ON YOUR MACHINE:
+
+1.  Use FTP to retrieve the file cslib.shar from the unix-xwindows
+    directory of the aw.com archive to the home directory on your
+    machine.
+
+2.  Execute the cslib.shar script by typing
+
+         sh cslib.shar
+
+    Executing the script creates a top-level directory called cslib that
+    contains all of the relevant files.
+
+3.  Connect to the cslib directory.
+
+4.  Rebuild the object files and libraries by typing
+
+         make
+
+    Note: This step assumes that you are using gcc as your compiler.  If
+    you want to use a different compiler, you will need to edit the
+    Makefile accordingly.
+
+5.  Copy the file gccx from the cslib directory into a directory on your
+    command search path.  If you will be the only person using the
+    libraries, you could put this file in your private command
+    directory, which is usually ~/bin.  If you are installing this
+    command for use by any user on the system, you will need to put it
+    in a public directory, such as /usr/local/bin.  For public
+    installation to work, your cslib directory must be readable by other
+    users.
+
+COMPILING PROGRAMS ON AN XWINDOWS SYSTEM
+
+The gccx command produced by the Makefile is a shell script that acts
+like gcc except that it automatically arranges to include the cslib
+header files and libraries whenever it is invoked as a command.  For
+example, to create an executable application from the source file
+house.c, all you need to do is type:
+
+     gccx -o house house.c
+
+NOTES AND DISCLAIMERS
+
+The cslib libraries are in the public domain and may be freely copied
+and distributed, although they remain under development.  No warranties
+are made concerning their correctness or stability, and no user support
+is guaranteed.  Bug reports and suggestions, however, are appreciated
+and may be sent to
+
+                      Eric Roberts <ericr@aw.com>

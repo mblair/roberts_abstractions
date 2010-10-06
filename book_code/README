@@ -1,0 +1,177 @@
+
+________________________________________________________________________
+
+Welcome!  You have reached the top-level directory in the FTP archive
+designed for use with the text "The Art and Science of C: A Library-
+Based Approach" (Addison-Wesley, 1995) and Programming Abstractions
+\in C: A Second Course in Computer Science, both by Eric Roberts.
+From here, you can get access to the source code for the libraries used
+in the books along with several other resources both for those teaching
+from the texts and for those learning from them.
+
+NOTES ON THE LIBRARIES
+
+To make it possible to teach ANSI C at the introductory level, "The Art
+and Science of C" is designed around several special libraries --
+ collectively known as the cslib library -- that hide much of the
+complexity associated with C until students are better equipped to
+understand how everything works.  To use the text, you must have access
+to the cslib library on your own machine.  Although the code for the
+cslib library is included in Appendix B of the text, it is much easier
+to obtain an electronic copy from the aw.com FTP site.
+
+With the exception of the graphics library presented in Chapter 7, the
+cslib library is completely standard and requires nothing more than what
+is provided as part of ANSI C.  Thus, if you do not intend to use the
+graphics library, it doesn't matter what version of cslib you get --
+ they are all the same.  However, because the mechanics of displaying
+screen images depend on the hardware and software configuration of each
+computer, you need an implementation of the graphics library that is
+appropriate to your computing environment.
+
+TO FIND THE RIGHT VERSION OF THE CSLIB LIBRARY FOR YOUR COMPUTING
+PLATFORM:
+
+1.  Check to see if your computing platform is any of the following:
+
+     o  A Macintosh running THINK C or Symantec C++
+     o  An IBM PC (or clone) running the Borland C/C++ or Turbo C++
+        compiler
+     o  Any Unix system running the X Windows operating system
+
+    For each of these platforms, there is a corresponding implementation
+    of the libraries specific to that computing environment.  To obtain
+    it, you should connect to the appropriate subdirectory and follow
+    the instructions in that README file.
+
+2.  If you are using one of the hardware systems from the preceding list
+    with a different compiler or operating system, consider purchasing
+    the software necessary to make your platform correspond to one of
+    the standard implementations.  For example, if you own an IBM PC but
+    use some compiler other than the Borland or Turbo compiler, it might
+    be worth installing one of those systems so that you can use all the
+    features provided by the libraries, including interactive graphics.
+    Although implementations for other platforms may be released in the
+    future, adapting the graphics library is not a high-priority task
+    now that there is at least one implementation for each of the major
+    hardware platforms used in most universities.
+
+3.  If you cannot obtain the desired software or are using some other
+    type of machine, get a copy of the standard version of the library
+    code from the standard subdirectory.
+
+    This implementation defines the libraries in an ANSI-standard form
+    but does not provide any on-screen graphics.  The standard
+    implementation of the graphics library instead writes a file
+    containing a text representation of the image suitable for printing
+    on any PostScript printer.
+
+4.  Although the standard library implementation is highly portable and
+    works without change on every machine I've tried, there may be some
+    systems that cannot support it.  If you find that your system does
+    not support the standard libraries for some reason, you should try
+    the simplified version of the library, which provides the minimum
+    level of support necessary to run the programs in the text.
+
+SUBDIRECTORY INDEX
+
+The Roberts.CS1.C directory itself contains no files other than a README
+file.  The files you need for the various libraries are collected in the
+following subdirectories, each of which has its own README file for
+further information:
+
+simplified     This subdirectory contains the simplest possible version
+               of the library code and matches the code printed in
+               Appendix B of the text (except for two minor changes
+               introduced to increase portability).  This implementation
+               is machine-independent and requires no system support
+               beyond the standard ANSI libraries.  The implementation
+               of the graphics library provides no actual screen display
+               but instead writes a PostScript file containing the
+               image.  The simplified version of the cslib library
+               should be used only if you are unable to get the standard
+               version or one of the platform-specific implementations
+               to work in your environment.
+
+standard       This subdirectory offers a more advanced version of the
+               libraries than that used in the simplified package.  One
+               advantage of the standard version is that it is
+               compatible with the programs in the forthcoming companion
+               volume to "The Art and Science of C", which will cover
+               more advanced material focusing on data structures and
+               algorithms.  Most importantly, the standard version of
+               the library includes a portable exception-handling
+               package that makes it possible to use better error-
+               recovery strategies.  Using the standard version of the
+               cslib library, as opposed to the simplified set, makes
+               for a smoother transition to more advanced work.
+
+               Like the simplified package, the standard package
+               implements the graphics library in a machine-independent
+               way by writing a PostScript file.  If you are working on
+               a system for which there is a platform-specific
+               implementation of the graphics library (these systems are
+               enumerated later in this list), you should use that
+               version instead.  The standard version exists so that the
+               fundamental libraries can be used on the widest possible
+               set of platforms.
+
+unix-xwindows  Along with the facilities provided by the standard
+               library package, this subdirectory contains an
+               implementation of the graphics library designed for use
+               with the X Windows system, which is available on many
+               computers that run the Unix operating system.  The
+               implementation is designed to work with several different
+               versions of the Unix operating system and automatically
+               configures itself to use the appropriate code for each.
+
+mac-think-c    This subdirectory contains an implementation of the
+               graphics library for THINK C (or Symantec C/C++) on the
+               Apple Macintosh.  It also includes an interface that
+               allows students to make a typescript of their computer
+               session, which is a difficult operation with older
+               versions of THINK C.  To work correctly, the Macintosh
+               must be running System 7 of the operating system and the
+               THINK C compiler must be version 5.0 or later.
+
+pc-borland     This subdirectory contains two separate implementations
+               of the graphics library for the Borland C/C++ compilers
+               used on the IBM PC and its clones.  The dos subdirectory
+               provides a simple implementation of the basic graphics
+               library on top of DOS.  The windows subdirectory has a
+               complete implementation of the graphics library that is
+               compatible with Microsoft Windows.  Except for the
+               graphics library, the package is identical to the
+               standard package.  The pc-borland version of the
+               libraries has been tested with Version 4 of the Borland
+               C/C++ compiler.  The same code may work with other
+               versions of the compiler and associated software, but it
+               impossible to test it with every version of the compiler.
+
+pc-turbo       This subdirectory contains an implementations of the
+               graphics library for the Turbo C++ compiler.  The code is
+               the same as that used in the windows version of the pc-
+               borland package, but has different installation
+               instructions.
+
+documents      This subdirectory contains documentation on the libraries
+               and the overall approach used in "The Art and Science of
+               C".  See the README file in the documents directory for
+               more information.
+
+programs       This subdirectory contains electronic copies of all
+               sample programs used in the text.  If you are teaching a
+               course using this text and want solutions to the
+               exercises, please contact your Addison-Wesley
+               representative.
+
+NOTES AND DISCLAIMERS
+
+The cslib libraries are in the public domain and may be freely copied
+and distributed, although they remain under development.  No warranties
+are made concerning their correctness or stability, and no user support
+is guaranteed.  Bug reports and suggestions, however, are appreciated
+and may be sent to
+
+                      Eric Roberts <ericr@aw.com>
+
