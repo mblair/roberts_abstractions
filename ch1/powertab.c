@@ -15,7 +15,7 @@
  */
 
 #define LowerLimit 	0
-#define UpperLimit 12
+#define UpperLimit 20
 
 /* Private function prototypes */
 
