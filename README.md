@@ -11,4 +11,4 @@ In order for the code samples to work, you need to run `make` in the `book_code/
 
 Progress
 --------
-I'm currently on page 20 (out of the 743 that I plan to read; Chapter 17, 'Looking Ahead to Java', is getting skipped). I'll be writing chapter notes on my [blog, once it's set up](http://matthewblair.net).
+I'm currently on page 34 (out of the 743 that I plan to read; Chapter 17, 'Looking Ahead to Java', is getting skipped). I'll be writing chapter notes on my [blog, once it's set up](http://matthewblair.net).
