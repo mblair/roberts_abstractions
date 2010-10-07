@@ -2,6 +2,3 @@
 *.o
 *.a
 *.swp
-
-#Because I'm not using gcc or csh.
-book_code/unix-xwindows/gccx
