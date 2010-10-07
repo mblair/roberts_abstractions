@@ -1,13 +1,13 @@
 #include <stdio.h>
-#include "../book_code/unix-xwindows/genlib.h"
-#include "../book_code/unix-xwindows/simpio.h"
+//#include "../book_code/unix-xwindows/genlib.h"
+//#include "../book_code/unix-xwindows/simpio.h"
 
 int main() {
 	int n;
 
 	printf("This program labels a number as even or odd.\n");
 	printf("Enter a number: ");
-	n = GetInteger();
+	scanf("%d", &n);
 	if (n % 2 == 0) {
 		printf("That number is even.\n");
 	} else {
