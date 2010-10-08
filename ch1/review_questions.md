@@ -66,3 +66,25 @@ American Standard Code for Information Interchange. Yep, had to look that
 ### 12. List all possible values of type `bool`.
 
 TRUE, FALSE
+
+### 13. What statements would include in a program to read a value from the user and store it in the variable `x`, which is declared as a double?
+
+This book would lead me to use GetReal() from the book's [I/O library](book_code/unix_xwindows/simpio.h). [No thanks](double.c):
+
+`scanf("%lf", &x);`
+
+### 14. Suppose that a function contains the following declarations:
+#### `int i;
+#### `long l;`
+#### `float f;`
+#### `double d;`
+#### `char c;`
+#### `string s;`
+### Write a series of printf calls that display the valyes of each of these variables on the screen.
+
+`printf("%d", i);`
+`printf("%ld", l);
+`printf("%f", f);
+`printf("%lf", d);
+`printf("%c", c);
+`printf("$s", s);
