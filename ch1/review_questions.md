@@ -186,15 +186,18 @@ A sentinel is a value that you use in a `while` loop to break out of the loop. I
 ### 25. What `for` loop control line would you use in each of the following situations:
 
 * Counting from 1 to 100
+
 	for (i=0;i<100;i++)
 * Counting by sevens starting at 0 until the number is three digits long
+	
 	for(i=0;i<100;i+=7)
 * Counting backward by twos from 100 to 0
+	
 	for(i=100;i>=0;i-=2)
 
 ### 26. What is a function prototype?
 
-A function prototype specifies a function's return values and its arguments. I am still not entirely clear on why one needs to include prototypes, but perhaps I'll learn later.
+A function prototype specifies a function's return values and its arguments. I am still not entirely clear on why one needs to include a prototype, but perhaps I'll learn later.
 
 ### 27. In your own words, describe what happens when you call a function in C.
 
@@ -202,10 +205,10 @@ A function prototype specifies a function's return values and its arguments. I a
 * A stack frame is created, containing space for all of the function's local variables.
 * The function's parameters are assigned their values. Type conversions are performed if necessary.
 * The function's statements are executed.
-* The `return` expression is evaluated and returned as the value of the function, if there is an expression. A type conversion (from the return value's type to the function's declared type) is performed if necessary.
+* The `return` expression is evaluated and returned as the value of the function, if there is a return expression (some functions don't return anything). A type conversion (from the return value's type to the function's declared type) is performed if necessary.
 * The stack frame goes bye bye.
 * The calling program goes on its merry way.
 
 ### 28. What is meant by the term stepwise refinement?
 
-As you create your program, you will probably need to break it up into parts, enclosed in functions. As you implement everything, you might need to continue breaking things down into smaller functions until every piece is simple.
+As you create your program, you will probably need to break it up into parts, enclosed in functions. As you implement everything, you might need to continue breaking things down into smaller functions until every piece is simple. Gotta love procedural programming.
