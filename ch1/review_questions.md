@@ -14,20 +14,17 @@ A source file contains...source code. An object file is a compiled
 Angle brackets are for system libraries. Double quotation marks are for your 
   own header files.
 
-### 4. How would you define a constant called CentimetersPerInch with the value
-  2.54?
+### 4. How would you define a constant called CentimetersPerInch with the value 2.54?
 
 Well, I'd call it `CENTIMETERS_PER_INCH` for starters. Here you go:
 
 `#define CENTIMETERS_PER_INCH 2.54`
 
-### 5. What is the name of the function that must be defined in every C 
-  program?
+### 5. What is the name of the function that must be defined in every C program?
 
 `main()`
 
-### 6. What is the purpose of the special character `\n` that appears at the end 
-  of most strings passed to printf?
+### 6. What is the purpose of the special character `\n` that appears at the end of most strings passed to printf?
 
 It ends the current line of output and begins another.
 
