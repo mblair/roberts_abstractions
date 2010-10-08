@@ -74,7 +74,7 @@ This book would lead me to use GetReal() from the book's [I/O library](book_code
 `scanf("%lf", &x);`
 
 ### 14. Suppose that a function contains the following declarations:
-#### `int i;
+#### `int i;`
 #### `long l;`
 #### `float f;`
 #### `double d;`
