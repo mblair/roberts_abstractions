@@ -7,8 +7,8 @@ I'm reading Eric S. Roberts' [Programming Abstractions in C: A Second Course in 
 
 Hacking
 -------
-In order for the code samples to work, you need to run `make` in the `book_code/unix-xwindows` directory first. I'm using [Clang 2.8](http://clang.llvm.org/), so I've modified the Makefile accordingly and have rewritten Roberts' gccx wrapper script, now called `roberts_clang`. Symlink that into `/usr/local/bin` and you're set.
+In order for the code samples to work, you need to run `make` in the `book_code/unix-xwindows` directory first. I'm using [Clang 2.8](http://clang.llvm.org/), so I've modified the book's original Makefile accordingly and have rewritten Roberts' gccx wrapper script, now called `roberts_clang`. Symlink that into `/usr/local/bin` (or somewhere else that's in your PATH) and you're set.
 
 Progress
 --------
-I'm currently on page 34 (out of the 743 that I plan to read; Chapter 17, 'Looking Ahead to Java', is getting skipped). I'll be writing chapter notes on my [blog, once it's set up](http://matthewblair.net).
+I'm currently on page 39 (out of the 743 that I plan to read; Chapter 17, 'Looking Ahead to Java', is getting skipped). I'll be writing chapter notes on my [blog, once it's set up](http://matthewblair.net).
