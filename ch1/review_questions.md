@@ -74,12 +74,12 @@ This book would lead me to use GetReal() from the book's [I/O library](book_code
 `scanf("%lf", &x);`
 
 ### 14. Suppose that a function contains the following declarations:
-#### `int i;`
-#### `long l;`
-#### `float f;`
-#### `double d;`
-#### `char c;`
-#### `string s;`
+`int i;`
+`long l;`
+`float f;`
+`double d;`
+`char c;`
+`string s;`
 ### Write a series of printf calls that display the valyes of each of these variables on the screen.
 
 `printf("%d", i);`
