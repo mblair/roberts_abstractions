@@ -65,11 +65,11 @@ American Standard Code for Information Interchange. Yep, had to look that
 
 ### 12. List all possible values of type `bool`.
 
-TRUE, FALSE
+{ TRUE, FALSE }
 
 ### 13. What statements would include in a program to read a value from the user and store it in the variable `x`, which is declared as a double?
 
-This book would lead me to use GetReal() from the book's [I/O library](book_code/unix_xwindows/simpio.h). [No thanks](double.c):
+This book would lead me to use GetReal() from the book's [I/O library](../book_code/unix_xwindows/simpio.h). [Yea, get real is right](double.c):
 
 	scanf("%lf", &x);
 
@@ -92,11 +92,11 @@ This book would lead me to use GetReal() from the book's [I/O library](book_code
 ### 15. Indicate the values and types of the following expressions:
 
 * `2 + 3` = 5, int
-* 19 / 5 = 3, int
-* 19.0 / 5 = 3.80, float
-* 3 * 6.0 = 18.0, float
-* 19 % 5 = 4, int
-* 2 % 7 = 2, int
+* `19 / 5` = 3, int
+* `19.0 / 5` = 3.80, float
+* `3 * 6.0` = 18.0, float
+* `19 % 5` = 4, int
+* `2 % 7` = 2, int
 
 ### 16. What is the difference between the unary minus operator and the binary subtraction operator?
 
@@ -108,19 +108,19 @@ In the context of C, _truncation_ is a loss of precision:
 
 	int x;
 	x = 2.5 / 1;
-	printf("%d", x);
+	printf("%d", x); // Prints 2.00000
 
 ### 18. By applying the appropriate precedence rules, calculate the result of each of the following expressions:
 
 * `6 + 5 / 4 - 3` = 4
-* `2 + 2 * (2 * 2 - 2) % 2 / 2` = 0
+* `2 + 2 * (2 * 2 - 2) % 2 / 2` = 2
 * `10 + 9 * ((8 + 7) % 6) + 5 * 4 % 3 * 2 + 1` = 42
 * `1 + 2 + (3 + 4) * ((5 * 6 % 7 * 8) - 9) - 10` = 42
 
 ### 19. How do you specify a shorthand assignment operation?
 
-`operand1 (op)= operand2`
-`x *= 2` doubles x.
+* `operand1 (op)= operand2`
+* `x *= 2` doubles x.
 
 ### 20. What is the difference between the expressions `++x` and `x++`?
 
