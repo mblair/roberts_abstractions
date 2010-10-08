@@ -11,7 +11,7 @@ int DigitSum(int n) {
 	return (sum);
 }
 
-int main() {
+int main(void) {
 	int num;
 
 	printf("Please enter an integer: ");
