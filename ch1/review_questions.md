@@ -188,9 +188,11 @@ A sentinel is a value that you use in a `while` loop to break out of the loop. I
 * Counting from 1 to 100
 
 `for (i=0;i<100;i++)`
+
 * Counting by sevens starting at 0 until the number is three digits long
 	
 `for(i=0;i<100;i+=7)`
+
 * Counting backward by twos from 100 to 0
 
 `for(i=100;i>=0;i-=2)`
