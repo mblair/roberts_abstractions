@@ -22,7 +22,7 @@ Well, I'd call it `CENTIMETERS_PER_INCH` for starters. Here you go:
 
 ### 5. What is the name of the function that must be defined in every C program?
 
-`main()`
+	main()
 
 ### 6. What is the purpose of the special character `\n` that appears at the end of most strings passed to printf?
 
@@ -71,20 +71,97 @@ TRUE, FALSE
 
 This book would lead me to use GetReal() from the book's [I/O library](book_code/unix_xwindows/simpio.h). [No thanks](double.c):
 
-`scanf("%lf", &x);`
+	scanf("%lf", &x);
 
 ### 14. Suppose that a function contains the following declarations:
-`int i;`
-`long l;`
-`float f;`
-`double d;`
-`char c;`
-`string s;`
+* `int i;`
+* `long l;`
+* `float f;`
+* `double d;`
+* `char c;`
+* `string s;`
 ### Write a series of printf calls that display the valyes of each of these variables on the screen.
 
-`printf("%d", i);`
-`printf("%ld", l);`
-`printf("%f", f);`
-`printf("%lf", d);`
-`printf("%c", c);`
-`printf("$s", s);`
+* `printf("%d", i);`
+* `printf("%ld", l);`
+* `printf("%f", f);`
+* `printf("%lf", d);`
+* `printf("%c", c);`
+* `printf("$s", s);`
+
+### 15. Indicate the values and types of the following expressions:
+
+* `2 + 3` = 5, int
+* 19 / 5 = 3, int
+* 19.0 / 5 = 3.80, float
+* 3 * 6.0 = 18.0, float
+* 19 % 5 = 4, int
+* 2 % 7 = 2, int
+
+### 16. What is the difference between the unary minus operator and the binary subtraction operator?
+
+Unary minus negates a value. Binary substraction subtracts one value from another.
+
+### 17. What does the term _truncation_ mean?
+
+In the context of C, _truncation_ is a loss of precision:
+
+	int x;
+	x = 2.5 / 1;
+	printf("%d", x);
+
+### 18. By applying the appropriate precedence rules, calculate the result of each of the following expressions:
+
+* `6 + 5 / 4 - 3` = 4
+* `2 + 2 * (2 * 2 - 2) % 2 / 2` = 0
+* `10 + 9 * ((8 + 7) % 6) + 5 * 4 % 3 * 2 + 1` = 42
+* `1 + 2 + (3 + 4) * ((5 * 6 % 7 * 8) - 9) - 10` = 42
+
+### 19. How do you specify a shorthand assignment operation?
+
+`operand1 (op)= operand2`
+`x *= 2` doubles x.
+
+### 20. What is the difference between the expressions `++x` and `x++`?
+
+`++x` is incremented before its value is returned, where `x++` returns the value of `x`, then increments it.
+
+### 21. What does the term _short-circuit evaluation_ mean?
+
+When a boolean expression is evaluated, the evaluation completes as early as its value becomes clear. So in the following:
+
+	int x = 1;
+	int y = 2;
+	if (x == 1 || y == 3) ...
+
+the expression `y == 3` is never evaluated, because only one of the expressions needs to be true, and the first is indeed true.
+
+### 22. Write out the general synctactic form for each of the following control statements: `if`, `switch`, `while`, `for`.
+
+	//This does not repeat.
+	if(conditional_expression) {
+		statements;
+	} else {
+		statements;
+	}
+
+	switch(conditional_expression) {
+		case const1:
+			statement;
+			break;
+		case const2:
+			statement;
+			break;
+		default:
+			statement;
+			break;`
+	}
+	
+	//This repeats until the conditional_expression is false.
+	while(conditional_expression) {
+		statements;
+	}
+	
+	for(initialization; conditional_expression; step) {
+		statements;
+	}
