@@ -7,7 +7,7 @@ A source file contains...source code. An object file is a compiled
 2. What characters are used to mark comments in a C program?
 ------------------------------------------------------------
 
-/* & */ are introduced in this book. // works for single-line comments.
+`/*` & `*/` are introduced in this book. `//` works for single-line comments.
 
 3. In an `#include` line, the name of the library header file can be 
   enclosed in either angle brackets or double quotation marks. What is the 
@@ -56,7 +56,7 @@ Type, scope, name, lifetime (isn't this tied to scope?)
 * `12MonthTotal` -> no, has to start with a letter
 * `marginal-cost` -> no hyphens
 * `b4hand` -> yes
-* `_stk_depth` -> yes (had to test this one, see vars.c)
+* `_stk_depth` -> yes (had to test this one, see [here](vars.c))
 
 9. What are the two attributes that define a data type?
 ------------------------------------------------------------
@@ -69,7 +69,7 @@ Domain and operations.
 The size of an implementation's long has to be greater than or equal to that 
   of an int, which has to be greater than or equal to that of a short. 
   Clang's limits.h gives 32767, 2,147,483,647 and 9.2e18, respectively 
-  (see ints.c)
+  (see [here](ints.c))
 
 11. What does ASCII stand for?
 -----------------------------------------------------------
