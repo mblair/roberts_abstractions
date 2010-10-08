@@ -69,7 +69,7 @@ American Standard Code for Information Interchange. Yep, had to look that
 
 ### 13. What statements would include in a program to read a value from the user and store it in the variable `x`, which is declared as a double?
 
-This book would lead me to use GetReal() from the book's [I/O library](../book_code/unix_xwindows/simpio.h). [Yea, get real is right](double.c):
+This book would lead me to use GetReal() from the book's [I/O library](../book_code/unix-xwindows/simpio.h). [Yea, get real is right](double.c):
 
 	scanf("%lf", &x);
 
@@ -145,7 +145,7 @@ the expression `y == 3` is never evaluated, because only one of the expressions 
 		statements;
 	}
 
-	switch(conditional_expression) {
+	switch(expression) {
 		case const1:
 			statement;
 			break;
@@ -165,3 +165,5 @@ the expression `y == 3` is never evaluated, because only one of the expressions 
 	for(initialization; conditional_expression; step) {
 		statements;
 	}
+
+
