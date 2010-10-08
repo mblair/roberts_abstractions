@@ -83,8 +83,8 @@ This book would lead me to use GetReal() from the book's [I/O library](book_code
 ### Write a series of printf calls that display the valyes of each of these variables on the screen.
 
 `printf("%d", i);`
-`printf("%ld", l);
-`printf("%f", f);
-`printf("%lf", d);
-`printf("%c", c);
-`printf("$s", s);
+`printf("%ld", l);`
+`printf("%f", f);`
+`printf("%lf", d);`
+`printf("%c", c);`
+`printf("$s", s);`
