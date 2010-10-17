@@ -16,7 +16,6 @@ int main(void) {
 				} else {
 					printf("%d * ", i);
 				}
-				fflush(stdout);
 				input /= i;
 				break;
 			}
