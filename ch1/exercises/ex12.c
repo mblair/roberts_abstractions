@@ -94,6 +94,11 @@ void printNumber(int x) {
 }
 
 void printTotal(int x) {
+	if(x > 999999) {
+		printf("That's too large.");
+		return;
+	}
+	
 	if(x == 0) {
 		printf("zero");
 		return;
