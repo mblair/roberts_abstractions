@@ -7,9 +7,7 @@ A source file contains...source code. An object file is a compiled
 
 `/*` & `*/` are introduced in this book. `//` works for single-line comments.
 
-### 3. In an `#include` line, the name of the library header file can be 
-  enclosed in either angle brackets or double quotation marks. What is the 
-  difference between the two forms of punctuation?
+### 3. In an `#include` line, the name of the library header file can be enclosed in either angle brackets or double quotation marks. What is the   difference between the two forms of punctuation?
 
 Angle brackets are for system libraries. Double quotation marks are for your 
   own header files.
@@ -45,7 +43,7 @@ Type, scope, name, lifetime (isn't this tied to scope?)
 * `12MonthTotal` -> no, has to start with a letter
 * `marginal-cost` -> no hyphens
 * `b4hand` -> yes
-* `_stk_depth` -> yes (had to test this one, see [here](vars.c))
+* `_stk_depth` -> yes (had to test this one, see [here](as_i_read/vars.c))
 
 ### 9. What are the two attributes that define a data type?
 
@@ -56,7 +54,7 @@ Domain and operations.
 The size of an implementation's long has to be greater than or equal to that 
   of an int, which has to be greater than or equal to that of a short. 
   Clang's limits.h gives 32767, 2,147,483,647 and 9.2e18, respectively 
-  (see [here](ints.c))
+  (see [here](as_i_read/ints.c))
 
 ### 11. What does ASCII stand for?
 
@@ -65,11 +63,11 @@ American Standard Code for Information Interchange. Yep, had to look that
 
 ### 12. List all possible values of type `bool`.
 
-{ TRUE, FALSE }
+{ TRUE, FALSE }. Although Clang tells me there's no such thing as a bool type.
 
-### 13. What statements would include in a program to read a value from the user and store it in the variable `x`, which is declared as a double?
+### 13. What statements would you include in a program to read a value from the user and store it in the variable `x`, which is declared as a double?
 
-This book would lead me to use GetReal() from the book's [I/O library](../book_code/unix-xwindows/simpio.h). [Yea, get real is right](double.c):
+This book would lead me to use GetReal() from the book's [I/O library](../book_code/unix-xwindows/simpio.h). [Yea, get real is right](as_i_read/double.c):
 
 	scanf("%lf", &x);
 
@@ -100,7 +98,7 @@ This book would lead me to use GetReal() from the book's [I/O library](../book_c
 
 ### 16. What is the difference between the unary minus operator and the binary subtraction operator?
 
-Unary minus negates a value. Binary substraction subtracts one value from another.
+Unary minus negates a value. Binary substraction subtracts one value from another. Also unary operators have higher precedence.
 
 ### 17. What does the term _truncation_ mean?
 
@@ -119,7 +117,7 @@ In the context of C, _truncation_ is a loss of precision:
 
 ### 19. How do you specify a shorthand assignment operation?
 
-* `operand1 (op)= operand2`
+* `operand1 (operator)= operand2`
 * `x *= 2` doubles x.
 
 ### 20. What is the difference between the expressions `++x` and `x++`?
@@ -187,7 +185,7 @@ A sentinel is a value that you use in a `while` loop to break out of the loop. I
 
 * Counting from 1 to 100
 
-`for (i=0;i<100;i++)`
+`for (i=1;i<=100;i++)`
 
 * Counting by sevens starting at 0 until the number is three digits long
 	
@@ -211,6 +209,6 @@ A function prototype specifies a function's return values and its arguments. I a
 * The stack frame goes bye bye.
 * The calling program goes on its merry way.
 
-### 28. What is meant by the term stepwise refinement?
+### 28. What is meant by the term _stepwise refinement_?
 
 As you create your program, you will probably need to break it up into parts, enclosed in functions. As you implement everything, you might need to continue breaking things down into smaller functions until every piece is simple. Gotta love procedural programming.
